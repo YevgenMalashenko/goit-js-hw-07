@@ -19,9 +19,7 @@ function onImageHandler(e) {
     return;
   }
 
-  const highResolutionImageUrl = galleryItems.find(
-    (object) => object.preview === e.target.src
-  ).original;
+  const highResolutionImageUrl = e.target.dataset.source;
 
   const instance = basicLightbox.create(`
   <img src="${highResolutionImageUrl}">

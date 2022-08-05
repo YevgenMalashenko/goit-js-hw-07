@@ -13,7 +13,7 @@ const itemsToInsert = galleryItems
 
 galleryElement.insertAdjacentHTML("beforeend", itemsToInsert);
 
-const lisagsadafsghtbox = new SimpleLightbox(".gallery a", {
+const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: "250",
 });
